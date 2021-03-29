@@ -1,0 +1,804 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="sHExqC38Cmz_2N9nJ3uFfzrhgDdx_1IrtV1qTFEqdkA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="XiCAVXLQvjBaKKny5xt9Z33sXUdiRqklZsZVqVZn">
+    <link rel="icon" href="/favicon.ico">
+    <link href="css/flatsome.css" rel="stylesheet" />
+    <title>
+        Tin tức và sự kiện | DEVMASTER
+    </title>
+    <meta name="description" content="Tin tức và sự kiện, Đào tạo lập trình viên chuyên nghiệp - php - .net - java - android - ios - c - C++,C#, Tư vấn thiết kế và xậy dựng phần mềm, thiết kế website" />
+    <meta name="keywords" content="Tin tức và sự kiện, Lập trình, lap trinh, học lập trình, hoc lap trinh, Lập trình web, lap trinh web, lập trình web php, lap trinh web php, học android, hoc android, lập trình di động, lap trinh di dong, lập trình web mã nguồn mở với php framework, php framework, lập trình game, lap trinh game, lập trình apps, lap trình apps, học php và mysql, hoc php va mysql,  asp.net mvc, học asp.net mvc5, hoc asp.net mvc5, asp.net mvc entity framework, java framework spring,  java web" />
+    <meta property="fb:app_id" content="221899571724289" />
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <style>
+        .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+            position: relative;
+            min-height: 1px;
+            padding-right: 2px;
+            padding-left: 2px;
+        }
+
+        .devbrand {
+            display: inline-block;
+            position: relative;
+            left: 45%;
+            margin-top: 20em;
+            text-align: center;
+        }
+
+        .spinner {
+            margin: auto;
+        }
+
+        .overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            /*background: #2b2727a6;*/
+            z-index: 999999999;
+            top: 0;
+            left: 0;
+        }
+
+        .spinner {
+            /* top: 50%; */
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            font-size: 10px;
+            /* position: relative; */
+            /* left: 50%; */
+        }
+
+            .spinner > div {
+                background-color: #fff;
+                height: 100%;
+                width: 6px;
+                display: inline-block;
+                -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+                animation: sk-stretchdelay 1.2s infinite ease-in-out;
+            }
+
+            .spinner .rect2 {
+                -webkit-animation-delay: -1.1s;
+                animation-delay: -1.1s;
+            }
+
+            .spinner .rect3 {
+                -webkit-animation-delay: -1.0s;
+                animation-delay: -1.0s;
+            }
+
+            .spinner .rect4 {
+                -webkit-animation-delay: -0.9s;
+                animation-delay: -0.9s;
+            }
+
+            .spinner .rect5 {
+                -webkit-animation-delay: -0.8s;
+                animation-delay: -0.8s;
+            }
+
+        @-webkit-keyframes sk-stretchdelay {
+            0%, 40%, 100% {
+                -webkit-transform: scaleY(0.4)
+            }
+
+            20% {
+                -webkit-transform: scaleY(1.0)
+            }
+        }
+
+        @keyframes sk-stretchdelay {
+            0%, 40%, 100% {
+                transform: scaleY(0.4);
+                -webkit-transform: scaleY(0.4);
+            }
+
+            20% {
+                transform: scaleY(1.0);
+                -webkit-transform: scaleY(1.0);
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100615822-3"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.14.0/lazyload.min.js"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100615822-3');
+    </script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <meta property="og:title" content="Tin tức và sự kiện" />
+    <meta property="og:description" content="Tin tức v&agrave; sự kiện" />
+    <meta property="og:type" content="category" />
+    <meta property="og:url" content="https://devmaster.edu.vn/tin-tuc-va-su-kien.html" />
+    <meta property="og:image" content="https://devmaster.edu.vn/uploads/images/510x250xananya-software-responsive-services.png_pagespeed_ic__mvepqzJYqa.png" />
+</head>
+<body>
+    <div id='fb-root'></div>
+    <script>
+        /*<![CDATA[/* */
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        /*]]>/* */
+    </script>
+    <!-- Your customer chat code -->
+    <div attribution='setup_tool' class='fb-customerchat' page_id='306976159731243' theme_color='#D43434'
+         logged_in_greeting="Chào bạn, DEVMASTER sẵn sàng hỗ trợ bạn"
+         logged_out_greeting="Chào bạn, DEVMASTER sẵn sàng hỗ trợ bạn">
+    </div>
+    <div class="overlay" style="display: none;">
+        <div class="devbrand">
+            <img src="/images/logo.png" style="width: 200px" alt="logo">
+            <p style="color: #fff">
+                Đang load dữ liệu
+            </p>
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+    </div>
+
+    <noscript id="deferred-styles">
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="css/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="css/assets/owl.theme.default.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/yamm.css">
+        <link rel="stylesheet" href="/css/animate.css">
+        <link rel="stylesheet" href="/css/animation.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    </noscript>
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+    <div id="mainheader">
+        <div class="container" style="padding-top: 1em;padding-bottom: 1em">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logoa.jpg" style="width: 100px; height: 50px;
+				    /*background: #fff;*/
+				    border-radius: 9px;
+				    padding-left: 3px;
+				    float: left;
+				    /*border-bottom: solid 1px #E4E4E4;*/" class="img-responsive" alt="logo devmaster">
+                <div class="right logo hidden-xs" style="float: left">
+                    <p class="header-title">CÔNG TY THHH TƯ VẤN XÂY DỰNG KIẾN NGUYÊN</p>
+                    <p> Thiết kế - Thi công - Chọn gói công trình dân dụng</p>
+                </div>
+            </a>
+            <ul class="nav navbar-nav navbar-right contact hidden-sm hidden-xs">
+                <li><a href="tel:0969609003"> <i class="fa fa-phone  faa-ring animated"></i> 0969.609.003</a></li>
+                <li class="hidden-xs"><a href="tel:0978611889 "> <i class="fa fa-phone  faa-ring animated"></i> 0978.611.889 </a> </li>
+            </ul>
+            <div class="menu_mobile_button">
+                <button data-toggle="collapse" data-target="#navbar-collapse-2" class="navbar-toggle collapsed" aria-expanded="false">
+
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mainnav">
+            <div id="" class="container">
+                <div class="navbar navbar-default yamm">
+                    <div id="navbar-collapse-2" class="navbar-collapse collapse">
+                        <ul style="width: 100%" class="nav navbar-nav">
+                            <li>
+                                <a href="/">Trang chủ</a>
+                            </li>
+                            <li class="dropdown yamm-fw">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">Các khoá đào tạo <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="grid-demo">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h3>Chuyên đề WEB - PHP</h3>
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://devmaster.edu.vn/cat-ghep-giao-dien-website-voi-html5-css3-jquery-ajax-bootstrap-devmaster-hcjabp.html">
+                                                            Lập trình web với HTML5 - CSS3 - Bootstrap - JQuery - Ajax - [30 giờ]
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://devmaster.edu.vn/Lap-trinh-web-ma-nguon-mo-php-mysql-devmaster-phpsql.html">
+                                                            Lập trình web với mã nguồn mở PHP&MYSQL - PHP FRAMEWORK [126 giờ]
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <h3>Chuyên đề Mobile</h3>
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://devmaster.edu.vn/Lap-trinh-di-dong-android.html">
+                                                            Lập trình Games/Apps trên nền tảng Android - [120 giờ]
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://devmaster.edu.vn/Lap-trinh-di-dong-android.html">
+                                                            Lập trình Games/Apps trên nền tảng IOS - [120 giờ]
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3>Chuyên đề JAVA</h3>
+                                                <ul>
+                                                    <li><a href="https://devmaster.edu.vn/Lap-trinh-ung-dung-voi-java-form-devmaster-javaform.html">Ngôn ngữ lập trình hướng đối tượng với java - [40 giờ]</a></li>
+                                                    <li><a href="https://devmaster.edu.vn/Lap-trinh-ung-dung-voi-java-form-devmaster-javaform.html">Lập trình ứng dụng với java - [100 giờ]</a></li>
+                                                    <li><a href="https://devmaster.edu.vn/Lap-trinh-website-voi-java-framework-strust-spring-hibernate-javawebs.html">Lập trình web site với java framework (STRUTS, SPRING, HIBERNATE) - [100 giờ]</a></li>
+                                                </ul>
+                                                <h3>Chuyên để NETWORK/SECURITY</h3>
+                                                <ul>
+                                                    <li><a href="#">Khoá học Quản trị hạ tầng mạng CCNA v6 - [72 giờ]</a></li>
+                                                    <li><a href="#">Khoá học quản trị hệ thống với Windows SERVER 2012- [72 giờ]</a></li>
+                                                    <li><a href="#">Chuyên gia bảo mật hệ thống CompTIA + - [110 giờ]</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <h3>Chuyên đề .NET</h3>
+                                                <ul>
+                                                    <li><a href="https://devmaster.edu.vn/lap-trinh-ung-dung-Windows-Forms-C-sharp-devmaster-winform.html">Nền tảng lập trình hướng đối tượng với C# - [40 giờ]</a></li>
+                                                    <li><a href="https://devmaster.edu.vn/lap-trinh-ung-dung-Windows-Forms-C-sharp-devmaster-winform.html">Lập trình ứng dụng WINDOWS FORM - [100 giờ]</a></li>
+                                                    <li><a href="https://devmaster.edu.vn/Lap-trinh-website-voi-asp-net-mvc-netmvc.html">Lập trình Website với ASP.NET MVC 5 - [100 giờ]</a></li>
+                                                </ul>
+                                                <h3>Chuyên đề khác</h3>
+                                                <ul>
+                                                    <li><a href="#">Ngôn ngũ lập trình C/C++ - [80 giờ]</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">Dịch vụ <b class="caret"></b></a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#"> Đào tạo theo như cầu </a></li>
+
+                                    <li><a tabindex="-1" href="#"> Cung cấp thiết bị - Phần mềm </a></li>
+
+                                    <li><a tabindex="-1" href="#"> Tư vấn - Thiết kế mạng hạ tầng  </a></li>
+
+                                    <li><a tabindex="-1" href="#"> Tư vấn - Triển khai dịch vụ mạng  </a></li>
+
+                                    <li><a tabindex="-1" href="#"> Tư vấn - Tư vấn, triển khai giám sát hệ thống  </a></li>
+
+                                    <li><a tabindex="-1" href="#"> Thực tập dự án </a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#schedule">
+
+                                    Lịch khai giảng
+                                </a>
+                            </li>
+                            <li>
+                                <ul role="menu" class="dropdown-menu">
+
+
+                                    <li><a tabindex="-1" href="/danh-muc/tin-tuc-va-su-kien.html"> Tin tức và sự kiện </a></li>
+
+                                    <li><a tabindex="-1" href="/danh-muc/tin-hoat-dong.html"> Tin hoạt động  </a></li>
+
+                                    <li><a tabindex="-1" href="/danh-muc/tin-cong-nghe.html"> Tin công nghệ </a></li>
+
+                                    <li><a tabindex="-1" href="/danh-muc/hoi-thao-workshop-codecam.html"> Hội thảo, workshop, Codecam  </a></li>
+
+                                    <li><a tabindex="-1" href="/danh-muc/tuyen-dung.html"> Thông tin việc làm </a></li>
+
+                                    <li><a tabindex="-1" href="/danh-muc/cam-nang-chia-se-kien-thuc.html"> Cẩm nang chia sẻ kiến thức </a></li>
+
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Tiện ích</a>
+                            </li>
+                            <li>
+                                <a href="#footer">Liên hệ</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slider" class="">
+        <div class="slide owl-carousel owl-theme">
+            <div>
+                <a href="https://devmaster.edu.vn/giang-sinh-ron-rang-chao-mung-nam-moi-cung-devmaster-2020-12-22-104549.html">
+                    <img src="/uploads/files/1.jpg" class="img-responsive" alt="GIÁNG SINH RỘN RÀNG – CHÀO MỪNG NĂM MỚI CÙNG DEVMASTER">
+                </a>
+            </div>
+            <div>
+                <a href="https://devmaster.edu.vn/dau-nam-hang-hai-hai-ngay-loc-xuan-cung-khoa-hoc-lap-trinh-tai-devmasteracademy.html">
+                    <img src="/uploads/files/2.jpg" class="img-responsive" alt="ĐẦU NĂM HĂNG HÁI - HÁI NGAY LỘC XUÂN - CÙNG KHÓA HỌC LẬP TRÌNH TẠI #DevmasterAcademy">
+                </a>
+            </div>
+            <div>
+                <a href="https://devmaster.edu.vn/devmaster-tri-an-ngay-nha-giao-viet-nam-20-11-2020.html">
+                    <img src="/uploads/files/3.jpg" class="img-responsive" alt="Devmaster tri ân ngày nhà giáo việt nam 20-11-2020">
+                </a>
+            </div>
+            <div>
+                <a href="https://devmaster.edu.vn/Lap-trinh-website-voi-asp-net-mvc-netmvc.html">
+                    <img src="/uploads/files/4.jpg" class="img-responsive" alt="Khai giảng khóa chuyên đề &quot;LẬP TRÌNH WEB VỚI CÔNG NGHỆ ASP.NET MVC 5, WebAPI, AngularJS&quot; Vừa học vừa thực hành trên dự án thực tế">
+                </a>
+            </div>
+            <div>
+                <a href="https://devmaster.edu.vn/Lap-trinh-web-ma-nguon-mo-php-mysql-devmaster-phpsql.html">
+                    <img src="/uploads/files/5.jpg" class="img-responsive" alt="KHAI GIẢNG KHÓA HỌC CHUYÊN ĐỀ WEB VỚI PHP">
+                </a>
+            </div>
+            <div>
+                <a href="http://devmaster.edu.vn/thong-bao-tuyen-thuc-tap-sinh-chuyen-de-nganh-cong-nghe-thong-tin.html">
+                    <img src="/uploads/files/6.jpg" class="img-responsive" alt="Tuyển thực tập sinh chuyên đề ngành công nghệ thông tin">
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <style type="text/css">
+        .image-cover {
+            position: relative;
+            height: auto;
+            overflow: hidden;
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+        .has-hover [class*="image-"] img {
+            transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+        }
+        .has-hover:hover img {
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 style="margin-bottom: 2em;" class="text-header text-center text-uppercase">
+                    Dự án <span> nổi bật</span>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-2">
+                <div class="text-center">
+                    <a href="#" class="adv-thumb-link">
+                        <div class="image-cover has-hover">
+                            <img src="http://hoangthiennam.vn/wp-content/uploads/2021/01/z2268530583376_ff156cb8131888bf0c747b41f99efa31.jpg" sizes="(max-width: 1615px) 100vw, 1615px" width="1615" height="1214">
+                            <div style="padding:0px 0px 0px 0px;">
+                                <div class="text-center">
+                                    <h6 class="uppercase portfolio-box-title">Dự án nhà ở gia đình Chị Nguyệt – Anh Hải (Đường Vành Đai BMT)</h6>
+                                    <p class="uppercase portfolio-box-category is-xsmall op-6">
+                                        <span class="show-on-hover">
+                                            Mới nhất
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                       
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-2 ">
+                <div class="">
+                    <div class="text-center">
+                        <a href="#" >
+                            <div class="image-cover has-hover">
+                                <img src="http://hoangthiennam.vn/wp-content/uploads/2020/03/IMG_1562835621658_1564800832411.jpg" alt="" width="314" height="314">
+                                <div style="padding:0px 0px 0px 0px;">
+                                    <div class="text-center">
+                                        <h6 class="uppercase portfolio-box-title">Dự án nhà ở gia đình Chị Nguyệt – Anh Hải (Đường Vành Đai BMT)</h6>
+                                        <p class="uppercase portfolio-box-category is-xsmall op-6">
+                                            <span class="show-on-hover">
+                                                Mới nhất
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-2">
+                <div class="text-center">
+                    <a href="#">
+                        <div class="image-cover has-hover">
+                            <img src="http://hoangthiennam.vn/wp-content/uploads/2017/08/1-phoi-canh.jpg" alt="" width="314" height="314">
+                            <div style="padding:0px 0px 0px 0px;">
+                                <div class="text-center">
+                                    <h6 class="uppercase portfolio-box-title">Dự án nhà ở gia đình Chị Nguyệt – Anh Hải (Đường Vành Đai BMT)</h6>
+                                    <p class="uppercase portfolio-box-category is-xsmall op-6">
+                                        <span class="show-on-hover">
+                                            Mới nhất
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-2 ">
+                <div class="">
+                    <div class="text-center">
+                        <a href="#">
+                            <div class="image-cover has-hover">
+                                <img src="http://hoangthiennam.vn/wp-content/uploads/2020/03/IMG_1562835621658_1564800832411.jpg" alt="" width="314" height="314">
+                                <div style="padding:0px 0px 0px 0px;">
+                                    <div class="text-center">
+                                        <h6 class="uppercase portfolio-box-title">Dự án nhà ở gia đình Chị Nguyệt – Anh Hải (Đường Vành Đai BMT)</h6>
+                                        <p class="uppercase portfolio-box-category is-xsmall op-6">
+                                            <span class="show-on-hover">
+                                                Mới nhất
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 style="margin-bottom: 2em;" class="text-header text-center text-uppercase">
+                    <span> Đá bazan</span>
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-2 ">
+                    <div class="text-center">
+                        <a href="#">
+                            <div class="image-cover has-hover">
+                                <img src="images/sp-dabazan/126622142_194299445527447_2839073845457669587_n.jpg" alt="" width="314" height="314" />
+                                <div style="padding:0px 0px 0px 0px;">
+                                    <div class="text-center">
+                                        <h6 class="uppercase portfolio-box-title">Dự án nhà ở gia đình Chị Nguyệt – Anh Hải (Đường Vành Đai BMT)</h6>
+                                        <p class="uppercase portfolio-box-category is-xsmall op-6">
+                                            <span class="show-on-hover">
+                                                Mới nhất
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-2 ">
+                    <div class="text-center">
+                        <a href="#">
+                            <div class="image-cover has-hover">
+                                <img src="images/sp-dabazan/137632894_225475489076509_1990788653764192788_n.jpg" alt="" width="314" height="314" />
+                                <div style="padding:0px 0px 0px 0px;">
+                                    <div class="text-center">
+                                        <h6 class="uppercase portfolio-box-title">Dự án nhà ở gia đình Chị Nguyệt – Anh Hải (Đường Vành Đai BMT)</h6>
+                                        <p class="uppercase portfolio-box-category is-xsmall op-6">
+                                            <span class="show-on-hover">
+                                                Mới nhất
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <section class="section dark has-mask mask-arrow" id="section_2024037320">
+            <div class="bg section-bg fill bg-fill   bg-loaded">
+
+
+                <div class="section-bg-overlay absolute fill"></div>
+
+                <div class="is-border" style="border-color:rgb(235, 235, 235);border-width:0px 0px 0px 0px;margin:6px 0px 0px 0px;">
+                </div>
+
+            </div><!-- .section-bg -->
+
+
+
+            <div class="section-content relative">
+
+                <div class="row row-collapse row-full-width align-center" id="row-260798626">
+                    <div class="col-md-4 ">
+                        <div class="col-inner">
+                            <h3><span style="color: #ffffff;">Công ty TNHH Tư Vấn Xây Dựng Kiến Nguyên</span></h3>
+                            <p><span style="font-size: 110%; color: #ffffff;"><strong>Liên hệ:</strong>&nbsp;0816.12.8479</span></p>
+                            <p><span style="font-size: 110%; color: #ffffff;"><strong>Địa chỉ:</strong> Số 109 Trần Quý Cáp, T.P Buôn Ma Thuột, Đắk Lắk</span></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="col-inner" style="padding:0px 2px 0px 3px;margin:0px 2px 0px 4px;">
+                            <h3><span style="color: #ffffff;">Chính sách của chúng tôi</span></h3>
+                            <p>
+                                <a href="http://hoangthiennam.vn/gioi-thieu/" target="_blank" title="Giới thiệu Hoàng Thiên Nam" rel="noopener noreferrer">Giới thiệu công ty</a>
+                            </p>
+                            <p><span style="font-size: 100%;"><a title="Tham khảo phong thủy" href="http://hoangthiennam.vn/category/phong-thuy/" target="_blank" rel="noopener noreferrer">Tham khảo phong thủy</a></span></p>
+                            <p><a href="http://hoangthiennam.vn/blogs/" target="_blank" title="Tin tức mới nhất" rel="noopener noreferrer">Tin tức mới nhất</a></p>
+                            <p><a href="http://hoangthiennam.vn/du-an/" target="_blank" title="Xem dự án" rel="noopener noreferrer">Dự án đã thực hiện </a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="col-inner">
+                            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.406134843611!2d108.04278011407968!3d12.686893991043098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31721d7c4d3c5a6f%3A0xadef3cd68526f4cb!2zOTUgTmd1eeG7hW4gxJDhu6ljIEPhuqNuaCwgVGjhuq9uZyBM4bujaSwgVGjDoG5oIHBo4buRIEJ1w7RuIE1hIFRodeG7mXQsIMSQ4bqvayBM4bqvaywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1583985893773!5m2!1svi!2s" style="border:" allowfullscreen="" aria-hidden="false" tabindex="0" width="600" height="250" frameborder="0"></iframe></p>
+                        </div>
+                    </div>
+
+                    <style scope="scope">
+                    </style>
+                </div>
+            </div><!-- .section-content -->
+
+
+            <style scope="scope">
+
+                #section_2024037320 {
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                    min-height: 300px;
+                    background-color: rgb(255, 255, 255);
+                }
+
+                    #section_2024037320 .section-bg-overlay {
+                        background-color: rgba(0, 0, 0, 0.64);
+                    }
+
+                    #section_2024037320 .section-bg.bg-loaded {
+                        background-image: url(http://hoangthiennam.vn/wp-content/uploads/2017/08/35492332116453.566fe5bcef85e.jpg);
+                    }
+            </style>
+        </section>
+
+
+        <style scope="scope">
+
+            #section_2024037320 {
+                padding-top: 35px;
+                padding-bottom: 35px;
+                min-height: 300px;
+                background-color: rgb(255, 255, 255);
+            }
+
+                #section_2024037320 .section-bg-overlay {
+                    background-color: rgba(0, 0, 0, 0.64);
+                }
+
+                #section_2024037320 .section-bg.bg-loaded {
+                    background-image: url(http://hoangthiennam.vn/wp-content/uploads/2017/08/35492332116453.566fe5bcef85e.jpg);
+                }
+        </style>
+
+    </footer>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/dist/owl.carousel.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
+    <script>
+        var myLazyLoad = new LazyLoad({
+            elements_selector: ".lazy"
+        });
+        $(document).ready(function () {
+            $('.parallax-window').parallax();
+            // Add smooth scrolling to all links
+            $("#main_nav a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+
+            var width = $(window).width();
+            if (width >= 1024) {
+
+                // Check the initial Poistion of the Sticky Header
+                var stickyHeaderTop = $('#mainnav').offset().top;
+
+                $(window).scroll(function () {
+                    $('.parallax-window').parallax();
+                    if ($(window).scrollTop() >= stickyHeaderTop) {
+
+                        $('#mainnav').addClass('fixed');
+                        //$('#mainnav').css({position: 'fixed', top: '0px'});
+                        //$('#mainnav').css('display', 'block');
+                    } else {
+                        $('#mainnav').removeClass('fixed');
+
+                        //$('#mainnav').css({position: 'static', top: '0px'});
+                        //$('#mainnav').css('display', 'none');
+                    }
+                });
+
+                $("#mainnav .nav.navbar-nav>li").hover(function () {
+                    $(this).addClass('open');
+                }, function () {
+                    $(this).removeClass('open');
+                })
+            } else {
+            }
+
+            $('.slide').owlCarousel({
+                loop: true,
+                items: 1,
+                autoplay: true
+            })
+            function course_list() {
+                var width = $(window).width();
+                if (width > 400) {
+                    $("#mobile-course").css('display', 'none');
+                    $('.products').owlCarousel({
+                        loop: true,
+                        autoplay: true,
+                        dots: false,
+                        lazyLoad: true,
+                        nav: true,
+                        responsive: {
+                            // breakpoint from 0 up
+                            0: {
+                                items: 1,
+                            },
+                            // breakpoint from 480 up
+                            480: {
+                                items: 2,
+                            },
+                            // breakpoint from 768 up
+                            768: {
+                                items: 3,
+                            },
+                            992: {
+                                items: 3,
+                            },
+                            1200: {
+                                items: 4,
+                            },
+                        }
+                    });
+                } else {
+                    $("#mobile-course").css('display', 'block');
+                }
+            }
+            course_list();
+            $(window).on('resize', function () {
+                course_list();
+            });
+
+
+
+            $('.partners').owlCarousel({
+                loop: true,
+                autoplay: true,
+                dots: false,
+                lazyLoad: true,
+                nav: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 2,
+                    },
+                    // breakpoint from 480 up
+                    480: {
+                        items: 2,
+                    },
+                    // breakpoint from 768 up
+                    768: {
+                        items: 3,
+                    },
+                    992: {
+                        items: 4,
+                    },
+                    1200: {
+                        items: 5,
+                    },
+                }
+            });
+            $('.teachers').owlCarousel({
+                loop: true,
+                items: 3,
+                dots: false,
+                nav: true,
+                lazyLoad: true,
+                autoplay: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        items: 2,
+                    },
+                    // breakpoint from 480 up
+                    480: {
+                        items: 2,
+                    },
+                    // breakpoint from 768 up
+                    768: {
+                        items: 3,
+                    },
+                    992: {
+                        items: 4,
+                    },
+                    1200: {
+                        items: 5,
+                    },
+                }
+            })
+        });
+    </script>
+
+</body>
+</html>
